@@ -154,6 +154,7 @@ p.small i {
 }
 
 .box.image img:hover {
+    /* Zoom and tilt effect on hover */
     transform: rotate(5deg) scale(1.2, 1.2);
     z-index: -1;
 }
