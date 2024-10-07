@@ -52,10 +52,6 @@ a:hover {
     margin: 0 0 10px;
 }
 
-.box-content a .button.no-margin {
-    padding: 100px;
-}
-
 .button:hover {
     /* Hover effect */
     background-color: #ff6b6b;
