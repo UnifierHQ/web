@@ -34,6 +34,16 @@ p strong {
     border-top: 20px;
 }
 
+.button.no-margin {
+    /* Removes margin from button */
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.box-content a .button.no-margin {
+    padding: 100px;
+}
+
 .button:hover {
     /* Hover effect */
     background-color: #ff6b6b;
@@ -110,8 +120,12 @@ p strong {
     height: 100%;
 }
 
+.box.image {
+    padding: 20px;
+}
+
 .box.image img {
-    border-radius: 20px;
+    border-radius: 15px;
     text-align: center;
     width: 100%;
     height: 100%;
@@ -120,6 +134,10 @@ p strong {
 
 .box-content {
     padding: 40px 40px 40px 80px;
+}
+
+.box-content.button-spacing {
+    padding: 40px 40px 70px 80px;
 }
 
 .box-content h1 {
@@ -131,6 +149,10 @@ p strong {
 .box-content p {
     margin-top: 16px;
     margin-bottom: 16px;
+}
+
+.box-content.button-spacing p {
+    padding-bottom: 10px;
 }
 
 .box-container .box {
@@ -170,4 +192,44 @@ p strong {
     background-clip: text;
     color: transparent;
     text-decoration: underline;
+}
+
+@media screen and (max-width: 850px) {
+    .button {
+        display: block;
+        margin: 5px auto;
+    }
+
+    .header-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .header-container h1 {
+        font-size: 42px;
+    }
+
+    .header-container p {
+        font-size: 18px;
+    }
+
+    .box-container {
+        display: block;
+    }
+
+    .box-container .box {
+        flex: 0;
+    }
+
+    .box-container .box.image {
+        padding: 10px 10px 7px;
+    }
+
+    .box-container .box .box-content {
+        padding: 10px 20px;
+    }
+
+    .box-content.button-spacing {
+        padding: 40px 40px 40px 80px;
+    }
 }
