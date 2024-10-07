@@ -105,13 +105,17 @@ a:hover {
     margin-bottom: 50px;
 }
 
-.header-container p#platforms {
+p.small {
     font-size: 18px;
     color: #ccc;
 }
 
-.header-container p#platforms i {
+p.small i {
     padding-left: 10px;
+}
+
+.body-container p.small {
+    font-size: 16px;
 }
 
 /* Body */
@@ -124,6 +128,13 @@ a:hover {
 
 .box-container {
     display: flex;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #171717, #333);
+    height: 100%;
+}
+
+.box-container.no-half {
+    display: block;
     border-radius: 20px;
     background: linear-gradient(135deg, #171717, #333);
     height: 100%;
@@ -173,6 +184,23 @@ a:hover {
 
 .box-container .box {
     flex: 1;
+}
+
+.box-content.align-center {
+    text-align: center;
+}
+
+.box-container.no-half .box {
+    flex: 0;
+}
+
+.box-container.no-half .box .box-content {
+    padding: 40px;
+}
+
+.box-content p.green-check i {
+    color: #11AD79;
+    margin-right: 5px;
 }
 
 .box-content span#feature-1 {
