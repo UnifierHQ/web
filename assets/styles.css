@@ -1,6 +1,16 @@
+@font-face {
+    font-family: Kollektif;
+    src: url('Kollektif.ttf');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: Inter, serif;
+    background-color: black;
 }
 
 p strong {
@@ -10,12 +20,24 @@ p strong {
 /* Navbar */
 .navbar-container {
     position: fixed;
-    background-color: black;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(10px);
     width: 100%;
+    height: 80px;
     color: white;
-    padding: 1px 25px;
     border-bottom: solid #ed4545;
     z-index: 999;
+}
+
+.navbar-container img {
+    height: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.navbar.container p {
+    text-align: center;
 }
 
 /* Hyperlink override */
@@ -26,7 +48,7 @@ a {
 }
 
 a:hover {
-    color: #ff6b6b;
+    color: #ff9898;
     text-decoration: underline;
 }
 
@@ -45,6 +67,12 @@ a:hover {
     margin-left: 5px;
     margin-right: 5px;
     border-top: 20px;
+}
+
+.navbar-container .button {
+    padding: 10px 20px;
+    margin: 0 0 0 10px;
+    background-color: #222;
 }
 
 .button.no-margin {
@@ -268,6 +296,36 @@ p.small i {
     text-decoration: underline;
 }
 
+/* Footer */
+.footer-container {
+    padding: 40px;
+    background-color: #222;
+    color: white;
+    line-height: 1.5;
+    display: flex;
+}
+
+.footer-box {
+    flex: 1;
+}
+
+.footer-box.align-right {
+    text-align: right;
+}
+
+.footer-box img {
+    height: 40px;
+}
+
+.footer-box img.easteregg {
+    margin-bottom: 0;
+}
+
+.footer-box p.slogan {
+    margin-top: 0;
+    font-family: Kollektif, serif;
+}
+
 @media screen and (max-width: 850px) {
     .button {
         display: block;
@@ -310,5 +368,13 @@ p.small i {
     .box.image img:hover {
         /* Zoom and tilt effect on hover */
         transform: none;
+    }
+
+    .footer-container {
+        display: block;
+    }
+
+    .footer-box {
+        flex: 0;
     }
 }
