@@ -317,6 +317,7 @@ p.small i {
 
 .footer-box {
     flex: 1;
+    font-size: 18px;
 }
 
 .footer-box.align-right {
@@ -327,6 +328,7 @@ p.small i {
     height: 40px;
 }
 
+
 .footer-box img.easteregg {
     margin-bottom: 0;
 }
@@ -334,6 +336,10 @@ p.small i {
 .footer-box p.slogan {
     margin-top: 0;
     font-family: Kollektif, serif;
+}
+
+.footer-box p.small {
+    font-size: 14px;
 }
 
 @media screen and (max-width: 850px) {
