@@ -60,12 +60,23 @@ a:hover {
     text-decoration: none;
 }
 
-.button#discord {
+.button.guilded {
+    /* Custom button color for Discord */
+    background-color: #F5C400;
+    color: black;
+}
+
+.button.guilded:hover {
+    /* Custom button hover color for Discord */
+    background-color: #ffe76e;
+}
+
+.button.discord {
     /* Custom button color for Discord */
     background-color: #5865f2;
 }
 
-.button#discord:hover {
+.button.discord:hover {
     /* Custom button hover color for Discord */
     background-color: #a8aeff;
 }
@@ -199,6 +210,10 @@ p.small i {
     padding: 40px;
 }
 
+.box-container.no-half .box .box-content.align-center.button-spacing {
+    padding-bottom: 70px;
+}
+
 .box-content p.green-check i {
     color: #11AD79;
     margin-right: 5px;
@@ -246,6 +261,13 @@ p.small i {
     text-decoration: underline;
 }
 
+.box-content span#opensource {
+    background: linear-gradient(45deg, #4de879, #f3ffc0);
+    background-clip: text;
+    color: transparent;
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 850px) {
     .button {
         display: block;
@@ -283,5 +305,10 @@ p.small i {
 
     .box-content.button-spacing {
         padding: 40px 40px 40px 80px;
+    }
+
+    .box.image img:hover {
+        /* Zoom and tilt effect on hover */
+        transform: none;
     }
 }
