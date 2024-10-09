@@ -348,6 +348,10 @@ p.small i {
         margin: 5px auto;
     }
 
+    .navbar-container .button {
+        display: none;
+    }
+
     .header-container {
         padding-left: 20px;
         padding-right: 20px;
@@ -370,15 +374,19 @@ p.small i {
     }
 
     .box-container .box.image {
-        padding: 10px 10px 7px;
+        padding: 10px 10px 4px;
     }
 
     .box-container .box .box-content {
         padding: 10px 20px;
     }
 
-    .box-content.button-spacing {
-        padding: 40px 40px 40px 80px;
+    .box-container .box .box-content.align-center {
+        padding: 10px 20px;
+    }
+
+    .box-container.no-half .box .box-content.align-center.button-spacing {
+        padding-bottom: 20px;
     }
 
     .box.image img:hover {
