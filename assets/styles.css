@@ -67,6 +67,16 @@ a:hover {
     margin-left: 5px;
     margin-right: 5px;
     border-top: 20px;
+    cursor: pointer;
+}
+
+.button.disabled {
+    background-color: #444;
+}
+
+.button.disabled:hover {
+    color: white;
+    background-color: #444;
 }
 
 .navbar-container .button {
@@ -127,6 +137,14 @@ a:hover {
     word-break: break-word;
     line-height: 1;
     font-size: 108px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.header-container.no-index h1 {
+    word-break: break-word;
+    line-height: 1;
+    font-size: 96px;
     font-weight: 700;
     margin-bottom: 30px;
 }
@@ -306,6 +324,78 @@ p.small i {
     text-decoration: underline;
 }
 
+/* Install overlay */
+.install-overlay {
+    position: fixed;
+    z-index: 2;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.47);
+    width: 100%;
+    height: 100%;
+    display: none;
+    opacity: 0;
+}
+
+.install-overlay.active {
+    display: flex;
+    opacity: 1;
+    animation: installFadeIn 0.3s forwards;
+    overflow: scroll;
+}
+
+.install-overlay .body-container {
+    padding-top: 0;
+    background: none;
+    opacity: 0;
+    margin: auto;
+    padding-bottom: 0;
+}
+
+.install-overlay .body-container p.install-close {
+    padding-top: 0;
+    margin-top: 5px;
+    font-size: 24px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    border-radius: 4px;
+    transition: background-color 0.1s ease;
+}
+
+.install-overlay .body-container p.install-close:hover {
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.install-overlay .body-container h1 {
+    margin-top: 0;
+}
+
+.install-overlay.active .body-container {
+    animation: installOptionsAppear 0.3s forwards;
+}
+
+@keyframes installFadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+@keyframes installOptionsAppear {
+    from {
+        opacity: 0;
+        padding-top: 60px;
+    } to {
+        opacity: 1;
+        padding-top: 0;
+    }
+}
+
 /* Footer */
 .footer-container {
     padding: 40px;
@@ -358,6 +448,10 @@ p.small i {
     }
 
     .header-container h1 {
+        font-size: 42px;
+    }
+
+    .header-container.no-index h1 {
         font-size: 42px;
     }
 
