@@ -2,4 +2,4 @@
 A website showcasing Unifier and its features.
 
 > [!WARNING]
-> UnifierHQ website is **source-available**, but it is **not open-source** at the moment.
+> Unlike most of our projects, our website is **source-available**, but it is **not open-source** at the moment.
