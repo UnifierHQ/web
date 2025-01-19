@@ -553,6 +553,7 @@ p.small i {
 
         .box-content {
             padding: 40px;
+            overflow-y: scroll;
 
             @media screen and (max-width: 850px) {
                 padding: 20px;
@@ -742,6 +743,10 @@ p.small i {
             .box-content {
                 padding: 40px;
 
+                @media screen and (max-width: 850px) {
+                    padding: 20px;
+                }
+
                 &.align-center.button-spacing {
                     padding-bottom: 70px;
                 }
@@ -801,6 +806,10 @@ p.small i {
                 background-size: 26px;
                 background-image: url("/assets/images/cross.svg");
                 background-position: center;
+
+                @media (prefers-color-scheme: dark) {
+                    filter: invert();
+                }
             }
         }
     }
