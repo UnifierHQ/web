@@ -564,8 +564,8 @@ p.small i {
                 align-items: center;
 
                 .box-feature-image {
-                    width: 20px;
-                    height: 20px;
+                    min-width: 20px;
+                    min-height: 20px;
                     mask-size: 22px;
                     mask-position: center;
                     mask-repeat: no-repeat;
