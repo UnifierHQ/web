@@ -258,6 +258,7 @@ a {
 
     .button-label {
         display: flex;
+        line-height: normal !important;
     }
 
     @media (prefers-color-scheme: dark) {
