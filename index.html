@@ -9,235 +9,317 @@
     <meta content="assets/banner.png" property="og:image">
     <meta content="#ed4545" data-react-helmet="true" name="theme-color">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="icon" type="image/png" href="images/unifier.png">
-    <link rel="stylesheet" href="assets/styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Inter:400,700' rel='stylesheet'>
+    <link rel="icon" type="image/png" href="assets/images/unifier.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter:700' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css" crossorigin="anonymous">
-    <script src="assets/effects.js"></script>
+    <script src="assets/js/script.js"></script>
 </head>
 <body>
-<div class="navbar-container">
-    <a href="/"><img src="assets/logo.png" alt=""></a>
-    <a class="button" href="#features">Features</a>
-    <a class="button" href="#support">Support</a>
-</div>
-<div class="header-container">
-    <h1>
-        Communities, <span id="slogan-gradient">connected.</span>
-    </h1>
-    <p>
-        Unifier lets you connect communities across platforms at blazing fast speeds with full control.<br>
-        Say goodbye to the days of slow bridging and platform lock-in.
-    </p>
-    <a href="/install.html" class="button">
-        <i class="fa-solid fa-download"></i>Get Unifier
-    </a>
-    <a href="https://discord.unifierhq.org" class="button discord">
-        <i class="fa-brands fa-discord"></i>Join our Discord
-    </a>
-</div>
-<div class="body-container">
-    <a id="features"></a>
-    <div class="box-container">
-        <div class="box" id="left">
-            <div class="box-content button-spacing">
-                <h1>
-                    Bridge at <span id="feature-1">lightning-fast speeds.</span> ⚡️🚀
-                </h1>
-                <p>
-                    Say goodbye to sluggish bridging performance! Unifier is built with speed in mind, so it works
-                    just as fast as you can type. With performance optimizations and caching baked into the Bridge,
-                    messages - even those with attachments - arrive at every connected server in
-                    <strong>milliseconds</strong>, not seconds.
-                </p>
-                <a href="https://wiki.unifierhq.org/compare/benchmarks" class="button">
-                    <i class="fa-solid fa-gauge"></i>Benchmarks
-                </a>
-            </div>
+    <div id="navbar">
+        <a id="logo" href="/"><img src="assets/images/logo.png" alt=""></a>
+        <div id="navbar-mobile-toggle">
+            <div id="navbar-mobile-toggle-icon"></div>
         </div>
-        <div class="box image">
-            <img src="assets/bridge.png" alt="Bridge">
+        <div id="navbar-links-container">
         </div>
     </div>
-</div>
-<div class="body-container">
-    <div class="box-container">
-        <div class="box">
-            <div class="box-content">
-                <h1>
-                    Your Room, <span id="feature-2">your way.</span> 🎨
-                </h1>
-                <p>
-                    Make your chatting room yours! With a vast array of customization options, such as room emojis,
-                    display names, and more, you can give your room a personality of its own.
-                </p>
+    <div id="header" class="index">
+        <div id="header-heading">
+            A bridge bot that can <span id="slogan-gradient">do it all.</span>
+        </div>
+        <div id="header-subtitle">
+            Meet Unifier - a modern, fast, and versatile bridge bot that connects communities across platforms.<br>
+            Say goodbye to the days of slow bridging and platform lock-in.
+        </div>
+        <a href="/install.html" class="button">
+            <div class="button-label">
+                <i class="fa-solid fa-download"></i>Get Unifier
+            </div>
+        </a>
+        <a href="https://discord.unifierhq.org" class="button discord">
+            <div class="button-label">
+                <i class="fa-brands fa-discord"></i>Join our Discord
+            </div>
+        </a>
+    </div>
+    <div class="body-container feature">
+        <div class="feature-deco">
+            <div class="feature-line"></div>
+            <div class="feature-text">
+                Highlight #01
             </div>
         </div>
-        <div class="box image">
-            <img src="assets/personalize.png" alt="Bridge">
-        </div>
-    </div>
-</div>
-<div class="body-container">
-    <div class="box-container">
-        <div class="box">
-            <div class="box-content">
-                <h1>
-                    Versatility meets <span id="feature-3">flexibility.</span> 💪
-                </h1>
-                <p>
-                    Unifier is not only versatile, but also flexible! Thanks to Modifiers (i.e. Unifier mods/plugins),
-                    you can easily extend Unifier's functionality beyond what it provides on its own. Install Modifiers
-                    to add platform support, automatic moderation, emojis, and more.
-                </p>
+        <div class="box-container lightred">
+            <div class="box">
+                <div class="box-content button-spacing">
+                    <div class="box-feature-label">
+                        <div class="box-feature-image speed"></div>
+                        <div class="box-feature-text">Ultra-fast performance</div>
+                    </div>
+                    <div class="box-heading">
+                        Bridge at <span id="feature-1">lightning-fast speeds.</span> ⚡️🚀
+                    </div>
+                    <div class="box-text">
+                        Say goodbye to sluggish bridging performance! Unifier is built with speed in mind, so it works
+                        just as fast as you can type. Thanks to various performance optimizations, Unifier's Bridge is one
+                        of the <strong>fastest</strong> in the world, and it can bridge messages in milliseconds, not
+                        seconds.
+                    </div>
+                    <a href="https://wiki.unifierhq.org/compare/benchmarks" class="button">
+                        <div class="button-label">
+                            <i class="fa-solid fa-gauge"></i>Benchmarks
+                        </div>
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="box image">
-            <img src="assets/platforms.png" alt="Bridge">
-        </div>
-    </div>
-</div>
-<div class="body-container">
-    <div class="box-container">
-        <div class="box">
-            <div class="box-content">
-                <h1>
-                    Get easy access to the <span id="feature-4">latest features.</span> 🤩
-                </h1>
-                <p>
-                    Unifier comes with a built-in updater that lets you effortlessly update your Unifier to the
-                    latest version. Don't waste time manually updating the bot's files, let Unifier do it for you
-                    with an intuitive command.
-                </p>
-            </div>
-        </div>
-        <div class="box image">
-            <img src="assets/upgrade.png" alt="Bridge">
-        </div>
-    </div>
-</div>
-<div class="body-container">
-    <div class="box-container">
-        <div class="box">
-            <div class="box-content">
-                <h1>
-                    Keep communities <span id="feature-5">protected.</span> 🛡️
-                </h1>
-                <p>
-                    With both global and server-side commands, you and server admins can easily take action against
-                    bad actors from causing harm to communities. It also has an <strong>Under Attack Mode</strong>,
-                    which servers can use anytime when they're being raided to prevent damage on other connected
-                    servers.
-                </p>
-            </div>
-        </div>
-        <div class="box image">
-            <img src="assets/safety.png" alt="Bridge">
-        </div>
-    </div>
-</div>
-<div class="body-container">
-    <div class="box-container">
-        <div class="box">
-            <div class="box-content">
-                <h1>
-                    No surprise guests with <span id="feature-6">Private Rooms.</span> 🤫
-                </h1>
-                <p>
-                    Want to chat just between you and your buddies? No problem! With Private Rooms, you can create
-                    room invites for the servers you want to add. If a server isn't invited, they won't be able to
-                    connect to the room, keeping uninvited guests out of you and your friends' conversation.
-                </p>
-                <p class="small">
-                    Please note, moderators will be able to access Private Rooms for the sake of keeping
-                    things safe for everyone. We don't want bad actors to spoil the party!
-                </p>
-            </div>
-        </div>
-        <div class="box image">
-            <img src="assets/private.png" alt="Bridge">
-        </div>
-    </div>
-</div>
-<div class="body-container">
-    <div class="box-container no-half">
-        <div class="box">
-            <div class="box-content align-center">
-                <h1>
-                    And so much more!
-                </h1>
-                <p class="green-check">
-                    <i class="fa-solid fa-circle-check"></i>Intuitive help command<br>
-                    <i class="fa-solid fa-circle-check"></i>Data portability<br>
-                    <i class="fa-solid fa-circle-check"></i>Message report functionality<br>
-                    <i class="fa-solid fa-circle-check"></i>EXP system<br>
-                    <i class="fa-solid fa-circle-check"></i>Customizable bot UI<br>
-                    <i class="fa-solid fa-circle-check"></i>Global Emojis<br>
-                    <i class="fa-solid fa-circle-check"></i>Open-source and free to use<br>
-                    <i class="fa-solid fa-circle-check"></i>And even more!<br>
-                </p>
+            <div class="box image">
+                <img src="assets/images/bridge.png" alt="Bridge">
             </div>
         </div>
     </div>
-</div>
-<div class="body-container">
-    <div class="box-container no-half">
-        <div class="box">
-            <div class="box-content align-center button-spacing">
-                <h1>
-                    The power of <span id="opensource">open source.</span>
-                </h1>
-                <p>
-                    Unifier is developed in the open. You can freely use, modify, and restribute it as long as you
-                    follow the
-                    <a href="https://github.com/UnifierHQ/unifier/blob/main/LICENSE.txt">software license</a>. We open
-                    source our code in hopes that people will learn from it, so that they can help us make
-                    cross-platform communication better together, even if they're not contributing to Unifier.
-                </p>
-                <a href="https://github.com/UnifierHQ/unifier" class="button">
-                    <i class="fa-brands fa-github"></i>Source code
-                </a>
+    <div class="body-container feature">
+        <div class="feature-deco right">
+            <div class="feature-line"></div>
+            <div class="feature-text">
+                Highlight #02
+            </div>
+        </div>
+        <div class="box-container skyblue">
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-feature-label">
+                        <div class="box-feature-image customize"></div>
+                        <div class="box-feature-text">Room customization</div>
+                    </div>
+                    <div class="box-heading">
+                        Your Room, <span id="feature-2">your way.</span> 🎨
+                    </div>
+                    <div class="box-text">
+                        Make your Unifier Room yours! With a vast array of customization options, such as Room emojis,
+                        display names, and more, you can give your Room a personality of its own. And with Filters coming
+                        soon, you'll be able to customize what you want and don't want in your Room.
+                    </div>
+                </div>
+            </div>
+            <div class="box image">
+                <img src="assets/images/personalize.png" alt="Bridge">
             </div>
         </div>
     </div>
-</div>
-<a id="support"></a>
-<div class="body-container">
-    <div class="box-container no-half">
-        <div class="box">
-            <div class="box-content align-center button-spacing">
-                <h1>
-                    Need help?
-                </h1>
-                <p>
-                    Join us on one of our communities - all bridged by Unifier!
-                </p>
-                <a href="https://discord.unifierhq.org" class="button discord">
-                    <i class="fa-brands fa-discord"></i>Discord
-                </a>
-                <a href="https://revolt.unifierhq.org" class="button">
-                    <i class="fa-solid fa-r"></i>Revolt
-                </a>
-                <a href="https://guilded.unifierhq.org" class="button guilded">
-                    <i class="fa-brands fa-guilded"></i>Guilded
-                </a>
+    <div class="body-container feature">
+        <div class="feature-deco">
+            <div class="feature-line"></div>
+            <div class="feature-text">
+                Highlight #03
+            </div>
+        </div>
+        <div class="box-container orange">
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-feature-label">
+                        <div class="box-feature-image config"></div>
+                        <div class="box-feature-text">Versatility & Modifiers</div>
+                    </div>
+                    <div class="box-heading">
+                        Versatility meets <span id="feature-3">flexibility.</span> 💪
+                    </div>
+                    <div class="box-text">
+                        Unifier is not only versatile, but also flexible! Thanks to Modifiers (i.e. Unifier mods/plugins),
+                        you can easily extend Unifier's functionality beyond what it provides on its own. Install Modifiers
+                        to add platform support, automatic moderation, emojis, and more.
+                    </div>
+                </div>
+            </div>
+            <div class="box image">
+                <img src="assets/images/platforms.png" alt="Bridge">
             </div>
         </div>
     </div>
-</div>
-<div class="footer-container">
-    <div class="footer-box">
-        <img src="assets/logo.png" alt="">
-        <p class="slogan">Communities, connected.</p>
-        <p>Made with ❤️ by UnifierHQ</p>
-        <p class="small">
-            Some of the images displayed on this website are mockups that may not accurately represent the final
-            product.
-        </p>
+    <div class="body-container feature">
+        <div class="feature-deco right">
+            <div class="feature-line"></div>
+            <div class="feature-text">
+                Highlight #04
+            </div>
+        </div>
+        <div class="box-container green">
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-feature-label">
+                        <div class="box-feature-image download"></div>
+                        <div class="box-feature-text">Updates made easy</div>
+                    </div>
+                    <div class="box-heading">
+                        Get easy access to the <span id="feature-4">latest features.</span> 🤩
+                    </div>
+                    <div class="box-text">
+                        Unifier comes with a built-in updater that lets you effortlessly update your Unifier to the
+                        latest version. Don't waste time manually updating the bot's files, let Unifier do it for you
+                        with an intuitive command.
+                    </div>
+                </div>
+            </div>
+            <div class="box image">
+                <img src="assets/images/upgrade.png" alt="Bridge">
+            </div>
+        </div>
     </div>
-    <div class="footer-box align-right">
+    <div class="body-container feature">
+        <div class="feature-deco">
+            <div class="feature-line"></div>
+            <div class="feature-text">
+                Highlight #05
+            </div>
+        </div>
+        <div class="box-container blue">
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-feature-label">
+                        <div class="box-feature-image secure"></div>
+                        <div class="box-feature-text">Flexible moderation</div>
+                    </div>
+                    <div class="box-heading">
+                        Keep communities <span id="feature-5">protected.</span> 🛡️
+                    </div>
+                    <div class="box-text">
+                        With both global and server-side commands, you and server admins can easily take action against
+                        bad actors from causing harm to communities. It also has an <strong>Under Attack Mode</strong>,
+                        which servers can use anytime when they're being raided to prevent damage on other connected
+                        servers.
+                    </div>
+                </div>
+            </div>
+            <div class="box image">
+                <img src="assets/images/safety.png" alt="Bridge">
+            </div>
+        </div>
     </div>
-</div>
+    <div class="body-container feature">
+        <div class="feature-deco right">
+            <div class="feature-line"></div>
+            <div class="feature-text">
+                Highlight #06
+            </div>
+        </div>
+        <div class="box-container purple">
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-feature-label">
+                        <div class="box-feature-image private"></div>
+                        <div class="box-feature-text">Private Rooms</div>
+                    </div>
+                    <div class="box-heading">
+                        No surprise guests with <span id="feature-6">Private Rooms.</span> 🤫
+                    </div>
+                    <div class="box-text">
+                        Want to chat just between you and your buddies? No problem! With Private Rooms, you can create
+                        room invites for the servers you want to add. If a server isn't invited, they won't be able to
+                        connect to the room, keeping uninvited guests out of you and your friends' conversation.
+                    </div>
+                    <div class="box-text small">
+                        Please note that moderators may be able to access Private Rooms for the sake of keeping
+                        things safe for everyone. We don't want bad actors to spoil the party!
+                    </div>
+                </div>
+            </div>
+            <div class="box image">
+                <img src="assets/images/private.png" alt="Bridge">
+            </div>
+        </div>
+    </div>
+    <div class="body-container">
+        <div class="box-container no-half">
+            <div class="box">
+                <div class="box-content align-center">
+                    <div class="box-heading">
+                        And so much more!
+                    </div>
+                    <div class="box-text green-check">
+                        <i class="fa-solid fa-circle-check"></i>Intuitive help command<br>
+                        <i class="fa-solid fa-circle-check"></i>Data portability<br>
+                        <i class="fa-solid fa-circle-check"></i>Message report functionality<br>
+                        <i class="fa-solid fa-circle-check"></i>EXP system<br>
+                        <i class="fa-solid fa-circle-check"></i>Customizable bot UI<br>
+                        <i class="fa-solid fa-circle-check"></i>Global Emojis<br>
+                        <i class="fa-solid fa-circle-check"></i>Open-source and free to use<br>
+                        <i class="fa-solid fa-circle-check"></i>And even more!<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-container">
+        <div class="box-container no-half">
+            <div class="box">
+                <div class="box-content align-center button-spacing">
+                    <div class="box-heading">
+                        The power of <span id="opensource">open source.</span>
+                    </div>
+                    <div class="box-text">
+                        Unifier is developed in the open. You can freely use, modify, and restribute it as long as you
+                        follow the
+                        <a href="https://github.com/UnifierHQ/unifier/blob/main/LICENSE.txt">software license</a>. We open
+                        source our code in hopes that people will learn from it, so that they can help us make
+                        cross-platform communication better together, even if they're not contributing to Unifier.
+                    </div>
+                    <a href="https://github.com/UnifierHQ/unifier" class="button">
+                        <div class="button-label">
+                            <i class="fa-brands fa-github"></i>Source code
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="support"></a>
+    <div class="body-container">
+        <div class="box-container no-half">
+            <div class="box">
+                <div class="box-content align-center button-spacing">
+                    <div class="box-heading">
+                        Need help?
+                    </div>
+                    <div class="box-text">
+                        Join us on one of our communities - all bridged by Unifier!
+                    </div>
+                    <a href="https://discord.unifierhq.org" class="button discord">
+                        <div class="button-label">
+                            <i class="fa-brands fa-discord"></i>Discord
+                        </div>
+                    </a>
+                    <a href="https://revolt.unifierhq.org" class="button">
+                        <div class="button-label">
+                            <i class="fa-solid fa-r"></i>Revolt
+                        </div>
+                    </a>
+                    <a href="https://guilded.unifierhq.org" class="button guilded">
+                        <div class="button-label">
+                            <i class="fa-brands fa-guilded"></i>Guilded
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <img id="footer-logo" src="assets/images/logo.png" alt="">
+        <div id="footer-slogan">
+            Communities, connected.
+        </div>
+        <div id="footer-text">
+            Created with ❤️ by the <a href="https://github.com/UnifierHQ">UnifierHQ team</a><br>
+            Website icons from <a href="https://fontawesome.com/">Font Awesome</a> and <a href="https://github.com/microsoft/fluentui-system-icons">Fluent UI System Icons</a><br><br>
+            Some of the images displayed on this website are mockups that may not accurately represent the final product.
+        </div>
+    </div>
+
+    <!-- Templates -->
+    <template id="navbar-link-template">
+        <a href="" class="navbar-link"></a>
+    </template>
 </body>
 </html>
